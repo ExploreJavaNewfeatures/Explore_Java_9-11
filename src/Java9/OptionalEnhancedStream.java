@@ -6,7 +6,7 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class Java9OptionalEnhancedStream {
+public class OptionalEnhancedStream {
     public static void main(String[] args) {
         List<Optional<String>> list = Arrays.asList(
                 Optional.empty(),

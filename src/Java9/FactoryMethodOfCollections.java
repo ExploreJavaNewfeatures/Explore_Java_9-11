@@ -2,7 +2,7 @@ package Java9;
 
 import java.util.*;
 
-public class Java9FactoryMethodOfCollections {
+public class FactoryMethodOfCollections {
     public static List<Integer> addListJava9Before() {
         List<Integer> listJava9Before= new ArrayList<>(Arrays.asList(1,2,3,4));
         listJava9Before.add(5);

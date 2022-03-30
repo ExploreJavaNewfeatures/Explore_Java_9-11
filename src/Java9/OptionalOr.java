@@ -3,7 +3,7 @@ package Java9;
 import java.util.Optional;
 import java.util.function.Supplier;
 
-public class Java9OptionalOr {
+public class OptionalOr {
     public static void main(String[] args) {
         Optional<String> optional1 = Optional.of("Mahesh");
         Supplier<Optional<String>> supplierString = () -> Optional.of("Not Present");
