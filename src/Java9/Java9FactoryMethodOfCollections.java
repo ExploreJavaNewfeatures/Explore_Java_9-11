@@ -1,3 +1,5 @@
+package Java9;
+
 import java.util.*;
 
 public class Java9FactoryMethodOfCollections {
