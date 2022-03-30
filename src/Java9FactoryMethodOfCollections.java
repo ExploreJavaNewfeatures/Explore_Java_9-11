@@ -8,6 +8,7 @@ public class Java9FactoryMethodOfCollections {
     }
     /*
     In java 9, they use "of" method to define an immutable collection for "list" "set" and "map" these mutable collection
+    The elements in the collections cannot be null
     */
     public static List<Integer> addListJava9() {
         List<Integer> listJava9 =

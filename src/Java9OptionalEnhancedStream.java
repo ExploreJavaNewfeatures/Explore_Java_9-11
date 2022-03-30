@@ -1,17 +1,17 @@
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class Java9Optional {
+public class Java9OptionalEnhancedStream {
     public static void main(String[] args) {
         List<Optional<String>> list = Arrays.asList(
                 Optional.empty(),
                 Optional.of("A"),
                 Optional.empty(),
                 Optional.of("B"));
+        //generate stream from a collection contains optional values
         //filter the list based to print non-empty values
         //if optional is non-empty, get the value in stream, otherwise return empty
         List<String> filteredListBeforeJava9 = list.stream()
