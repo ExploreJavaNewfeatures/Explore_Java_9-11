@@ -1,6 +1,6 @@
-package Java9;
+package Java9.InterfaceWithPrivateMethod;
 
-public class InterfacePrivateMethodImplement implements InterfaceWithPrivateMethod{
+public class InterfacePrivateMethodImplement implements InterfaceWithPrivateMethod {
     @Override
     public void method1() {
         System.out.println("abstract method");

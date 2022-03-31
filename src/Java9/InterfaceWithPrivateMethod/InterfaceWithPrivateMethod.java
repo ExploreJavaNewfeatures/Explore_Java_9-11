@@ -1,4 +1,4 @@
-package Java9;
+package Java9.InterfaceWithPrivateMethod;
 
 public interface InterfaceWithPrivateMethod {
     void method1();
