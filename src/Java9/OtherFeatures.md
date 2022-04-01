@@ -33,6 +33,9 @@ that the result will be returned in the future, meanwhile, the user can manually
 trigger blocking to the current thread. Besides, CompleteFuture can use callback function to get result.
 
 ## 5. Multi-version JAR
-Because Java is constantly evolving and adding new features to JDK, 
+Because Java is constantly evolving and adding new features to JDK, And, if we want to use those features 
+in our APIs, then that can obligate downstream dependencies to upgrade their JDK version. Sometimes, we 
+are forced to wait on using new language features in order to remain compatible. Java9 allows simultaneously 
+contain implementations compatible with disparate JDK versions.
 
 `javac --release 8 -d classes-8 src/Java9/OptionalOr.java`
