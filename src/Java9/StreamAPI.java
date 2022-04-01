@@ -1,6 +1,7 @@
 package Java9;
 
 import java.util.List;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class StreamAPI {
@@ -15,7 +16,7 @@ public class StreamAPI {
         list2.stream().dropWhile(s -> s >= 4).forEach(System.out::println);
 
         //iterate demo
-        Stream.iterate(3, x-> x < 10, x -> x+3).forEach(System.out::println);
+        IntStream.iterate(3, x-> x < 10, x -> x+3).forEach(System.out::println);
 
         //ofNullable demo
         long count = Stream.ofNullable(list3).count();

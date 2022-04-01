@@ -4,7 +4,7 @@ package Java9;
 public class ExploreDeprecated {
     private final int radius = 5;
 
-    @Deprecated(since = "9", forRemoval = true)
+    @Deprecated(since = "1.01", forRemoval = true)
     public Double sizeDeprecated(){
         return  Math.pow(this.radius,2);
     }
