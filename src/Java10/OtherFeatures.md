@@ -35,3 +35,22 @@ is subject to removal in a future version of Java SE. It's been replaced
 by java.security.Policy and related classes.
 Similarly, java.security.{Certificate,Identity,IdentityScope,Signer} APIs 
 are marked forRemoval=true.
+
+## 4. Performance Improvements
+The G1 garbage collector is the default one since JDK 9. However, the full GC
+for G1 used a single threaded mark-sweep-compact algorithm. This has been 
+changed to the parallel mark-sweep-compact algorithm in Java 10 effectively 
+reducing the stop-the-world time during full GC.
+
+## 5. Class Data Sharing
+Class-Data Sharing, introduced in JDK 5, allows a set of classes to be
+pre-processed into a shared archive file that can then be memory-mapped at 
+runtime to reduce startup time which can also reduce dynamic memory footprint 
+when multiple JVMs share the same archive file.
+
+CDS only allowed the bootstrap class loader, limiting the feature to system 
+classes only. Application CDS (AppCDS) extends CDS to allow the built-in system 
+class loader (a.k.a., the “app class loader”), the built-in platform class 
+loader, and custom class loaders to load archived classes. This makes it 
+possible to use the feature for application classes. Java 10 introduces AppCDS,
+now it is open sourced and made publicly available.
