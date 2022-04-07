@@ -10,7 +10,6 @@ import java.nio.file.Path;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.Is.is;
 
-
 public class NewFileMethod {
     @Test
     public void should_equal_to_when_get_string_from_demo_txt() throws IOException {
