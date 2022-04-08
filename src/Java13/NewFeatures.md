@@ -24,3 +24,9 @@ The Z Garbage Collector was introduced in Java 11 as a low-latency garbage colle
 mechanism, such that GC pause times never exceeded 10 ms. However, unlike other HotSpot VM GCs 
 such as G1 and Shenandoah, it was not equipped to return unused heap memory to the operating 
 system. Java 13 added this capability to the ZGC.
+
+## 3. Reimplement the legacy Socket API
+Java 13 replaced old Socket API to new version. Java 13 replaces the underlying implementation 
+to align the API with the futuristic user-mode threads. Instead of PlainSocketImpl, the provider 
+interface now points to NioSocketImpl. This newly coded implementation is based on the same 
+internal infrastructure as java.nio. The user still can optional choose old implementation though.
